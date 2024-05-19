@@ -32,8 +32,8 @@ export const BentoGridItem = ({
   className?: string;
   title?: string | React.ReactNode;
   description?: string | React.ReactNode;
-//   header?: React.ReactNode;
-//   icon?: React.ReactNode;
+  //   header?: React.ReactNode;
+  //   icon?: React.ReactNode;
   id: number;
   img?: string;
   imgClassName?: string;
@@ -47,10 +47,15 @@ export const BentoGridItem = ({
         className
       )}
       style={{
-        background:"rgb(4,7,29)",
-        backgroundColor:"gradient..."
+        background: "rgb(4,7,29)",
+        backgroundColor:
+          "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
       }}
     >
+
+        <div className={`${id==6} && "flex justify-center h-full"`}>
+            
+        </div>
       {/* {header} */}
       <div className="group-hover/bento:translate-x-2 transition duration-200">
         {/* {icon} */}
