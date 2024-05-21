@@ -56,6 +56,10 @@ export const BentoGridItem = ({
     setCopied(true);
   };
 
+  const col1 = ["Tensorflow", "Numpy", "Keras"];
+  const col2 = ["Javascript", "Python", "MongoDB"];
+  const col3 = ["React js", "Express", "Tailwind"];
+
   return (
     <div
       className={cn(
@@ -91,7 +95,7 @@ export const BentoGridItem = ({
             />
           )}
         </div>
-        {id === 6 && <BackgroundGradientAnimation/>}
+        {id === 6 && <BackgroundGradientAnimation />}
 
         <div
           className={cn(
@@ -108,24 +112,35 @@ export const BentoGridItem = ({
 
           {id === 2 && <GlobeDemo />}
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute right-3 lg:-right-2">
-              <div className="flex flex-col gap-3 lg:gap-8">
-                {["react.js", "tailwind", "keras"].map((item) => (
+            <div className="flex gap-1 lg:gap-5 w-fit absolute right-3 lg:right-5">
+              <div className="flex flex-col gap-3 lg:gap-5">
+                {col1.map((item) => (
                   <span
                     key={item}
-                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]"
+                    className="py-2 lg:py-3 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]"
                   >
                     {item}
                   </span>
                 ))}
-                <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]" />
+                {/* <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]" /> */}
               </div>
-              <div className="flex flex-col gap-3 lg:gap-8">
-                <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]" />
-                {["react.js", "tailwind", "keras"].map((item) => (
+              <div className="flex flex-col gap-3 lg:gap-5">
+                {/* <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]" /> */}
+                {col2.map((item) => (
                   <span
                     key={item}
-                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]"
+                    className="py-2 lg:py-3 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+              <div className="flex flex-col gap-3 lg:gap-5">
+                {/* <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]" /> */}
+                {col3.map((item) => (
+                  <span
+                    key={item}
+                    className="py-2 lg:py-3 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]"
                   >
                     {item}
                   </span>
