@@ -5,8 +5,8 @@ import { ThemeProvider } from "@/app/provider"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Ashish's Portfolio",
-  description: "A Place To Showcase My Work",
+  title: "AR.com",
+  description: "My portfolio",
 };
 
 export default function RootLayout({

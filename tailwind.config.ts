@@ -8,7 +8,7 @@ const {
 } = require("tailwindcss/lib/util/flattenColorPalette");
 
 const config = {
-  darkMode: ["class"],
+  // darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
@@ -27,6 +27,10 @@ const config = {
     },
     extend: {
       colors: {
+        backgroundWhite:"#FFFFFF",
+        background: "#171717",
+        textColor: "#DFDFD6",
+        textColorWhite:"#3C3C43",
         black: {
           DEFAULT: "#000",
           100: "#000319",
@@ -41,11 +45,11 @@ const config = {
         blue: {
           "100": "#E4ECFF",
         },
-        purple: "#CBACF9",
+        // purple: "#CBACF9",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
+        // background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
@@ -188,6 +192,7 @@ const config = {
       );
     },
   ],
+  darkMode:"class",
 } satisfies Config;
 
 function addVariablesForColors({ addBase, theme }: any) {
