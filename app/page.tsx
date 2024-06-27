@@ -1,15 +1,13 @@
 "use client";
 import { useState } from "react";
-import { FloatingNav } from "@/components/ui/Floating-navbar";
 import {
-  Grid,
+  About,
   RecentProjects,
   Hero,
   Experience,
   Footer,
   Navbar,
 } from "@/components/index";
-import { navItems } from "@/data";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -27,11 +25,8 @@ export default function Home() {
           <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         </div>
 
-        {/* <FloatingNav  
-          navItems = {navItems}
-        /> */}
         <Hero />
-        <Grid />
+        <About />
         <RecentProjects />
         <Experience />
         <Footer />
