@@ -23,9 +23,11 @@ const Navbar = (props: any) => {
               window.scrollTo(0, 0);
             }}
           >
-            <p className="text-5xl font-bold bg-gradient-to-r from-purple-600 via-blue-400 to-blue-600 text-transparent bg-clip-text">
-              AR
-            </p>
+            <img
+              src={props.darkMode ? `./logo-l.svg` : `./logo.svg`}
+              alt="logo"
+              className="w-10 h-10"
+            />
           </Link>
           <div className="flex items-center gap-4">
             <ul className="list-none hidden sm:flex flex-row gap-10">
@@ -74,9 +76,11 @@ const Navbar = (props: any) => {
             window.scrollTo(0, 0);
           }}
         >
-          <p className="font-grenze text-5xl font-bold logo bg-gradient-to-r from-purple-600 via-blue-400 to-blue-600 text-transparent bg-clip-text">
-            AR
-          </p>
+          <img
+              src={props.darkMode ? `./logo-l.svg` : `./logo.svg`}
+              alt="logo"
+              className="w-10 h-10"
+            />
         </Link>
         <div className="flex gap-8 justify-center items-center">
           <button onClick={props.toggleDarkMode}>
@@ -87,7 +91,7 @@ const Navbar = (props: any) => {
             )}
           </button>
           <RxDividerVertical orientation="vertical" color="#414853" />
-          
+
           {toggle ? (
             <ImCross
               className={` ${
